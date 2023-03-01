@@ -5,6 +5,12 @@ The final product is a cartoon-like version of the original image. Like this:
 
 ![Image](./photo.png)
 
+To install this package just run this command:
+
+```bash
+pip install funkycam
+```
+
 The luminance calculation is simplified so that it can recolor video in "realtime" (depends on image quality and number of colors chosen). 
 To select colors, there are 3 options:
 1. Use the seaborn color_palettes or matplotlib colormaps.

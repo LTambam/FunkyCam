@@ -15,7 +15,7 @@ Simple examples are given in the "examples" folder to demonstrate how to use thi
 
 The luminance calculation is simplified so that it can recolor video in "realtime" (depends on image quality and number of colors chosen). 
 To select colors, there are 3 options:
-1. Use the seaborn color_palettes or matplotlib colormaps.
+1. Use the seaborn color_palettes or matplotlib colormaps (https://matplotlib.org/stable/tutorials/colors/colormaps.html).
 2. Manually input RGB colors in a list of lists. Resolution is 8 bits: 0-255 each color.
 3. Specify "random_colors=True".
 

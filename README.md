@@ -11,6 +11,8 @@ To install this package just run this command:
 pip install funkycam
 ```
 
+Simple examples are given in the "examples" folder to demonstrate how to use this package with a webcam, image files, and video files.
+
 The luminance calculation is simplified so that it can recolor video in "realtime" (depends on image quality and number of colors chosen). 
 To select colors, there are 3 options:
 1. Use the seaborn color_palettes or matplotlib colormaps.
@@ -18,7 +20,5 @@ To select colors, there are 3 options:
 3. Specify "random_colors=True".
 
 You can also specify the line size, blur value when finding edges, and blur value when finding colors. Generally, increasing blur values will reduce detail in the edges and colors, i.e. fewer edges and larger splotches of colors.
-
-Examples are given in the "examples" folder to demonstrate how to use this package with a webcam, image files, and video files.
 
 Turns out this is a little bit like "cel-shading", a commonly used shader algorithm.

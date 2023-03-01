@@ -3,7 +3,6 @@
 This is a simple package with one class, Funky, that allows you to recolor images by brightness of each pixel and extract edges and thicken edges. 
 The final product is a cartoon-like version of the original image. Like this:
 
-This project is a simple sketch app developed in Java to practice OOP with a GUI.
 ![Image](./photo.png)
 
 The luminance calculation is simplified so that it can recolor video in "realtime" (depends on image quality and number of colors chosen). 

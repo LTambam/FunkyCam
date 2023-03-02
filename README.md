@@ -3,7 +3,7 @@
 This is a simple package with one class, Funk, that recolors images to a smaller number of colors based on luminance of each pixel. It also extracts and thickens edges. Its fast enough it can even be used in real-time video!
 The final product is a cartoon-like version of the original image or video. Like this:
 
-![Image](./Punch.png)
+![Image](./climb.png)
 
 and this:
 

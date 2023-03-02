@@ -27,8 +27,8 @@ funk = Funk()
 funky_img = funk.funkify(img)
 ```
 
-**Note**: The code expects images that are read using cv2 which means they are in BGR format. If you read with other packages, images are often in RGB format. It may still work fine, but the calculations will be incorrect. Thus, the channels will need to be flipped. 
-This can be accomplished on an np array with array slicing:
+**Note**: The code expects images that are read using cv2 which means they are in BGR format. If you read with other packages, images are often in RGB format. It may still work fine, but the calculations will be incorrect. You will probably want to flip the R and B channels. 
+This can be accomplished on numpy array with array slicing:
 
 ```python
 img_flipped = img[:,:,::-1] # flips third dim

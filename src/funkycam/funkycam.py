@@ -41,6 +41,8 @@ class Funk(object):
         lightness = np.uint8(np.sum(np.multiply(colors, self.luminance_mult), axis=1))
         colors = colors[np.argsort(lightness)]
         lightness = np.sort(lightness)
+        
+        print("Colors:\n", colors)
 
         return colors, lightness
 

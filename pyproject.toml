@@ -1,10 +1,12 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = [
+    "setuptools",
+]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "funkycam"
-version = "0.0.2"
+version = "0.0.4"
 authors = [
     { name="Luke Tambakis"},
 ]
@@ -15,6 +17,11 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy",
+    "opencv-python",
+    "seaborn",
 ]
 
 [project.urls]

@@ -45,6 +45,6 @@ If you can't find colors you like, I recommend randomly generating colors and re
 You can also specify the line size, blur value for finding edges, and blur value when finding colors. Generally, increasing blur values will reduce detail in the edges and colors, i.e. fewer edges and larger splotches of colors. **NOTE: The line size and blur values must be odd numbers**. 
 
 ## Other Notes
-The luminance calculation is not real luminance, it is simplified so that it can recolor video in "real-time" (depends on image quality and number of colors chosen). 
+The luminance calculation is not real luminance, it is simplified so that it can recolor video in "real-time" (depends on image quality and number of colors chosen). To my understanding, actual luminance would require linearizing the image colors. this takes too long with Numpy. With GPU processing, I imagine this would be simple to implement. 
 
 Turns out this method is a little bit like "cel-shading", a commonly used shader algorithm.

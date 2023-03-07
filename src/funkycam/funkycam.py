@@ -73,7 +73,7 @@ class Funk(object):
         return inds
 
     def funkify(self, img):
-        print('funkify!')
+
         # Read in foreground image from the 'examples/resources' folder
         background_img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
         background_img = Image.fromarray(background_img)

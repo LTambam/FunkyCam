@@ -9,10 +9,10 @@ and this:
 
 ![Alt Text](./funkykillbill.gif)
 
-To install this package, download the source and navigate to the project folder. Then use the following command:
+To install this package use the following command:
 
 ```bash
-pip install .
+pip install funkycam
 ```
 
 Examples are given in the "examples" folder to demonstrate how to use this package with a webcam, image files, and video files. But, to use this class all you need to do is:

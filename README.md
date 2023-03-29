@@ -9,6 +9,8 @@ and this:
 
 ![Alt Text](./funkykillbill.gif)
 
+## Getting Started
+
 To install this package use the following command:
 
 ```bash

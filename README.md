@@ -42,7 +42,7 @@ To select colors, there are 3 options:
 
 If you can't find colors you like, I recommend randomly generating colors and recording the colors that look good. The colors are printed every time it runs, but you can also access them from the Funk object with "funk.colors".
 
-You can also specify the line size, blur value for finding edges, and blur value when finding colors. Generally, increasing blur values will reduce detail in the edges and colors, i.e. fewer edges and larger splotches of colors. **NOTE: The line size and blur values must be odd numbers**. 
+You can also specify the block size and blur value for finding edges, and blur value when finding colors. Increasing the block size seems to increase the thickness of the edges. Increasing blur values will reduce detail in the edges and colors, i.e. fewer edges and larger splotches of colors. These values depend a lot on the resolution of the image or video. **NOTE: The block size and blur values must be odd numbers**. 
 
 ## Other Notes
 The luminance calculation is not real luminance, it is simplified so that it can recolor video in "real-time" (depends on image quality and number of colors chosen). 

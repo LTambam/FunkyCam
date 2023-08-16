@@ -14,8 +14,8 @@ funk = Funk(color_list=colors, line_size=15, edge_blur_val=7, color_blur_val=11)
 # choose the line_size, and blur values
 # funk = Funk(line_size=19, line_blur_val=13, color_blur_val=9)
 
-img = cv2.imread('./resources/willem.jpg')
+img = cv2.imread('./example/resources/willem.jpg')
 
 funky_img = funk.funkify(img)
 
-cv2.imwrite('./willemout.jpg', funky_img)
+cv2.imwrite('./example/bleh2.jpg', funky_img)

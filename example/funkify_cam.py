@@ -30,9 +30,22 @@ cv2.namedWindow("a", cv2.WINDOW_NORMAL)
 cv2.resizeWindow("a", 960, 540)
 cv2.namedWindow("b", cv2.WINDOW_NORMAL)
 cv2.resizeWindow("b", 960, 540)
-
+i = 0
 while(True):
     ret, frame = vid.read()
+
+    hsv = cv2.cvtColor(frame, cv2.COLOR_BGR2HSV)
+    avg_v = cv2.mean(hsv[:, :, 2])[0]
+    
+    diff_v = avg_v - 160
+    if (diff_v > 5):
+        hsv[:, :, 2] = cv2.add(hsv[:, :, 2], diff_v)
+    elif (diff_v < -5):
+        hsv[:, :, 2] = cv2.subtract(hsv[:, :, 2], diff_v)
+    
+    frame = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
+    print(avg_v, cv2.mean(hsv[:, :, 2]))
+
     cartoon = funk.funkify(frame)
 
     cv2.imshow('a', cartoon)

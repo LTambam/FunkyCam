@@ -11,7 +11,7 @@ funk = Funk(n_colors=8, sns_color_palette='inferno', line_size=11, edge_blur_val
 # generate random colors
 # funk = Funk(n_colors=7, random_colors=True, line_size=11, edge_blur_val=5, color_blur_val=7)
 
-vid_capture = cv2.VideoCapture('./resources/KillBill.mp4')
+vid_capture = cv2.VideoCapture('./example/resources/KillBill.mp4')
 
 frame_width = int(vid_capture.get(3))
 frame_height = int(vid_capture.get(4))
